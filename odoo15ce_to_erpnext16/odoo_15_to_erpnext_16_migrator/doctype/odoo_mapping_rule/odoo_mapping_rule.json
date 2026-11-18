@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "autoname": "format:{mapping_type}-{odoo_source_key}",
+ "creation": "2026-11-18 07:40:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mapping_type",
+  "odoo_source_key",
+  "odoo_source_name",
+  "col_break_1",
+  "target_doctype",
+  "erpnext_target_value",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "mapping_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Mapping Type",
+   "options": "Account\nTax\nPayment Method\nItem Group\nUOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "odoo_source_key",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Odoo Source ID / Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "odoo_source_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Odoo Source Name"
+  },
+  {
+   "fieldname": "col_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_doctype",
+   "fieldtype": "Link",
+   "label": "Target DocType",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "erpnext_target_value",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "ERPNext Target Record",
+   "options": "target_doctype",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-18 07:40:00.000000",
+ "modified_by": "Administrator",
+ "module": "Odoo 15 to ERPNext 16 Migrator",
+ "name": "Odoo Mapping Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

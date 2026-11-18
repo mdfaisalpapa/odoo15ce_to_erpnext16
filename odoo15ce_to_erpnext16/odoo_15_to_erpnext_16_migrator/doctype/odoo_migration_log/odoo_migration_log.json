@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-11-18 07:40:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "odoo_model",
+  "odoo_record_id",
+  "odoo_record_name",
+  "col_break_1",
+  "erpnext_doctype",
+  "erpnext_docname",
+  "status",
+  "section_details",
+  "error_message",
+  "request_payload"
+ ],
+ "fields": [
+  {
+   "fieldname": "odoo_model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Odoo Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "odoo_record_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Odoo Record ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "odoo_record_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Odoo Record Reference / Name"
+  },
+  {
+   "fieldname": "col_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erpnext_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "ERPNext DocType",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "erpnext_docname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ERPNext DocName"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Success\nFailed\nSkipped",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_details",
+   "fieldtype": "Section Break",
+   "label": "Details & Errors"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Code",
+   "label": "Error Message",
+   "options": "Text"
+  },
+  {
+   "fieldname": "request_payload",
+   "fieldtype": "Code",
+   "label": "Payload / Snapshot",
+   "options": "JSON"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-18 07:40:00.000000",
+ "modified_by": "Administrator",
+ "module": "Odoo 15 to ERPNext 16 Migrator",
+ "name": "Odoo Migration Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
