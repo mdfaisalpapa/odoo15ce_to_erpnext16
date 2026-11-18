@@ -20,7 +20,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Mapping Type",
-   "options": "Account\nTax\nPayment Method\nItem Group\nUOM",
+   "options": "Item\nAccount\nTax\nPayment Method\nItem Group\nUOM",
    "reqd": 1
   },
   {
